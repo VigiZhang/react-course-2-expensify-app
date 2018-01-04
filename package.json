@@ -6,14 +6,14 @@
   "license": "MIT",
   "engines": {
     "node": "6.11.4"
-  }, 
+  },
   "scripts": {
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
-    "test": "jest --config=jest.config.json", 
-    "start": "node server/server.js", 
+    "test": "jest --config=jest.config.json",
+    "start": "node server/server.js",
     "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
@@ -30,6 +30,7 @@
     "moment": "^2.20.1",
     "node-sass": "4.5.3",
     "normalize.css": "7.0.0",
+    "numeral": "2.0.6",
     "raf": "3.3.2",
     "react": "16.0.0",
     "react-addons-shallow-compare": "^15.6.2",
@@ -44,7 +45,7 @@
     "uuid": "^3.1.0",
     "validator": "^9.1.2",
     "webpack": "3.1.0"
-  }, 
+  },
   "devDependencies": {
     "enzyme": "3.0.0",
     "enzyme-adapter-react-16": "1.0.0",
